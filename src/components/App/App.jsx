@@ -33,7 +33,6 @@ function App() {
 			/>
 			{error && <p>{error}</p>}
 
-			{error && <p>{error}</p>}
 			{loading ? (
 				<p>Loading...</p>
 			) : data?.articles?.length ? (

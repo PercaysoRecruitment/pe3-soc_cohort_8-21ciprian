@@ -9,7 +9,7 @@ function Main({articles}) {
 					<p>{article.description}</p>
 					<p>
 						{article.content.substring(0, 200)}...
-						<a href={article.url}>
+						<a href={article.url} target='_blank' rel='noreferrer'>
 							<span>Read full article</span>
 						</a>
 					</p>

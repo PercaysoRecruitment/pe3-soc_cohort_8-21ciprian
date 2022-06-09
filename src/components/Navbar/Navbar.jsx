@@ -9,7 +9,7 @@ function Navbar({setData}) {
 		'Science',
 		'Health',
 	]
-	async function handleTopics(topic) {
+	async function fetchTopics(topic) {
 		const response = await fetch(
 			`${
 				process.env.REACT_APP_BASE_URL
@@ -21,7 +21,7 @@ function Navbar({setData}) {
 		setData(fetchedData)
 	}
 	async function handleHeader(e) {
-		await handleTopics(e)
+		await fetchTopics(e)
 	}
 	return (
 		<nav>
