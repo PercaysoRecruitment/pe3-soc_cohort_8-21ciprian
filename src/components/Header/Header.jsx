@@ -52,7 +52,9 @@ function Header({search, setSearch, setData, setError, setLoading}) {
 						onFocus={hideError}
 						onClick={hideError}
 					/>
-					<button onClick={handleClick}>Search</button>
+					<button className={styles.inputButton} onClick={handleClick}>
+						Search
+					</button>
 				</div>
 			</div>
 			<Navbar setData={setData} />
