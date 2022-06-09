@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react'
 import Footer from '../Footer/Footer'
+import Header from '../Header/Header'
 import Main from '../Main/Main'
 import NotFound from '../NotFound/NotFound'
 import './App.module.css'
@@ -23,6 +24,15 @@ function App() {
 
 	return (
 		<section className='app'>
+			<Header
+				search={search}
+				setSearch={setSearch}
+				setData={setData}
+				setError={setError}
+				setLoading={setLoading}
+			/>
+			{error && <p>{error}</p>}
+
 			{error && <p>{error}</p>}
 			{loading ? (
 				<p>Loading...</p>
