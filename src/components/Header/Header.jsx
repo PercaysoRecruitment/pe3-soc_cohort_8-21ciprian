@@ -1,3 +1,4 @@
+import Navbar from '../Navbar/Navbar'
 function Header({search, setSearch, setData, setError, setLoading}) {
 	async function fetchData() {
 		setLoading(true)
@@ -49,6 +50,7 @@ function Header({search, setSearch, setData, setError, setLoading}) {
 				/>
 				<button onClick={handleClick}>Search</button>
 			</div>
+			<Navbar setData={setData} />
 		</header>
 	)
 }
