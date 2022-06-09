@@ -22,7 +22,7 @@ function Navbar({setData}) {
 		setData(fetchedData)
 	}
 	async function handleHeader(topic) {
-		// await fetchTopics(e)
+		// await fetchTopics(topic)
 	}
 	return (
 		<nav className={styles.navbar}>
