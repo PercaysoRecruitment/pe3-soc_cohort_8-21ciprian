@@ -20,8 +20,8 @@ function Navbar({setData}) {
 		const fetchedData = await response.json()
 		setData(fetchedData)
 	}
-	async function handleHeader(e) {
-		await fetchTopics(e)
+	async function handleHeader(topic) {
+		// await fetchTopics(e)
 	}
 	return (
 		<nav>

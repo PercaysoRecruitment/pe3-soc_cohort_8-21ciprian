@@ -1,4 +1,6 @@
 import Navbar from '../Navbar/Navbar'
+import styles from './Header.module.css'
+
 function Header({search, setSearch, setData, setError, setLoading}) {
 	async function fetchData() {
 		setLoading(true)
@@ -36,19 +38,21 @@ function Header({search, setSearch, setData, setError, setLoading}) {
 		setError(null)
 	}
 	return (
-		<header>
-			<div>
-				<p>PE3News</p>{' '}
-				<input
-					type='text'
-					placeholder='Search..'
-					value={search}
-					onChange={e => setSearch(e.target.value)}
-					onKeyPress={handleEnterKey}
-					onFocus={hideError}
-					onClick={hideError}
-				/>
-				<button onClick={handleClick}>Search</button>
+		<header className={styles.header}>
+			<div className={styles.headerTop}>
+				<p className={styles.logo}>PE3News</p>{' '}
+				<div className={styles.inputContainer}>
+					<input
+						type='text'
+						placeholder='Search..'
+						value={search}
+						onChange={e => setSearch(e.target.value)}
+						onKeyPress={handleEnterKey}
+						onFocus={hideError}
+						onClick={hideError}
+					/>
+					<button onClick={handleClick}>Search</button>
+				</div>
 			</div>
 			<Navbar setData={setData} />
 		</header>
