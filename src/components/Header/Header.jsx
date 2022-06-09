@@ -43,6 +43,7 @@ function Header({search, setSearch, setData, setError, setLoading}) {
 				<p className={styles.logo}>PE3News</p>{' '}
 				<div className={styles.inputContainer}>
 					<input
+						className={styles.input}
 						type='text'
 						placeholder='Search..'
 						value={search}
