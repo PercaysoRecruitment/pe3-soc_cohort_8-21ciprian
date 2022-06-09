@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './Navbar.module.css'
 
 function Navbar({setData}) {
 	const topics = [
@@ -24,10 +25,14 @@ function Navbar({setData}) {
 		// await fetchTopics(e)
 	}
 	return (
-		<nav>
-			<ul>
+		<nav className={styles.navbar}>
+			<ul className={styles.navList}>
 				{topics.map(topic => (
-					<li key={topic} onClick={() => handleHeader(topic)} value={topic}>
+					<li
+						key={topic}
+						onClick={() => handleHeader(topic)}
+						value={topic}
+						className={styles.navListItem}>
 						{topic}
 					</li>
 				))}
