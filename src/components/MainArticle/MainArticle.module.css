@@ -1,1 +1,52 @@
+.mainArticle {
+	width: 100%;
+	max-width: 1080px;
+	margin-bottom: 1rem;
+}
+.mainImg {
+	max-width: 100%;
+	margin: auto;
+}
+.mainDescTitle {
+	color: #716c65;
+}
+.mainDescContent {
+	margin-top: 1.5rem;
+	color: #716c65;
+	margin-bottom: 1rem;
+}
+.mainDescContent a {
+	text-decoration: none;
+}
+.fullArticleLink {
+	color: #000;
+	font-weight: 700;
+}
+.fullArticleLink:hover {
+	color: #b80000;
+	text-decoration: underline;
+}
+.articleSource {
+	margin-top: 1.5rem;
 
+	display: flex;
+	justify-content: flex-start;
+	gap: 1rem;
+}
+.articleSource a {
+	color: #000;
+	font-weight: 700;
+	text-decoration: none;
+}
+.articleSource a:hover {
+	color: #b80000;
+	text-decoration: underline;
+}
+.source {
+	color: #000;
+	font-weight: 700;
+}
+.source:not(:last-of-type) {
+	border-right: 1px solid #716c65;
+	padding-right: 1rem;
+}
