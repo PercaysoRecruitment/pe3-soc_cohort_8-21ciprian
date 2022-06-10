@@ -16,7 +16,7 @@ function SecondaryArticle({article}) {
 					<section className={styles.secondaryDesc}>
 						<h2 className={styles.secondaryDescTitle}>{article.title}</h2>
 						<p className={styles.secondaryDescContent}>
-							{article.content.substring(0, 200)}...{' '}
+							{article.content.substring(0, 150)}...{' '}
 							<span className={styles.fullArticleLink}>Read full article</span>
 						</p>
 

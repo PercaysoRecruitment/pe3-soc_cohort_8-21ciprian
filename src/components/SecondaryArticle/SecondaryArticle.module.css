@@ -61,3 +61,31 @@ a {
 		color: #716c65;
 	}
 }
+@media screen and (min-width: 980px) {
+	.secondary {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+	.secondaryImg {
+		max-width: 100%;
+		object-fit: contain;
+		object-position: 10% 10%;
+	}
+	hr {
+		display: none;
+	}
+	.secondaryDesc {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.secondaryDescContent {
+		width: 100%;
+		/* white-space: wrap;
+		overflow-y: hidden;
+		text-overflow: ellipsis; */
+	}
+}

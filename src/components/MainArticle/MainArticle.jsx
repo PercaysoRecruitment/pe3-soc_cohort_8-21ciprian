@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './MainArticle.module.css'
 
 function MainArticle({article}) {
@@ -15,7 +14,7 @@ function MainArticle({article}) {
 			<section className={styles.mainDesc}>
 				<h2 className={styles.mainDescTitle}>{article.title}</h2>
 				<p className={styles.mainDescContent}>
-					{article.content.substring(0, 200)}...{' '}
+					{article.content.substring(0, article.content.length - 15)}...{' '}
 					<a href={article.url} target='_blank' rel='noreferrer'>
 						<span className={styles.fullArticleLink}>Read full article</span>
 					</a>
