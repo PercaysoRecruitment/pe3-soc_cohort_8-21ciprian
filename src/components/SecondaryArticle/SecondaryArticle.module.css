@@ -30,3 +30,34 @@ a {
 .secondaryDesc {
 	padding-left: 0.5rem;
 }
+@media screen and (min-width: 480px) {
+	.secondaryDesc {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.articleSource {
+		color: #716c65;
+		display: block;
+	}
+	.articleSource .source:not(:first-of-type) {
+		display: none;
+	}
+}
+@media screen and (min-width: 600px) {
+	.articleSource .source:not(:first-of-type) {
+		display: inline;
+	}
+	.articleSource .source:not(:last-of-type) {
+		border-right: 1px solid rgba(113, 108, 101, 0.4);
+		padding-right: 0.5rem;
+		padding-left: 0.2rem;
+	}
+}
+@media screen and (min-width: 670px) {
+	.secondaryDescContent {
+		display: block;
+		color: #716c65;
+	}
+}
