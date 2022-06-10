@@ -50,3 +50,21 @@
 	border-right: 1px solid rgba(113, 108, 101, 0.4);
 	padding-right: 1rem;
 }
+@media screen and (min-width: 980px) {
+	.mainArticle {
+		display: grid;
+		width: 100%;
+		grid-template-columns: 3fr 1fr;
+		margin: auto;
+		padding: 1rem;
+		gap: 2rem;
+	}
+	.mainImg {
+		max-width: 100%;
+	}
+	.mainDesc {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
