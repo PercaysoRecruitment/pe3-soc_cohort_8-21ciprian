@@ -18,11 +18,7 @@ function SecondaryArticle({article}) {
 						<h2 className={styles.secondaryDescTitle}>{article.title}</h2>
 						<p className={styles.secondaryDescContent}>
 							{article.content.substring(0, 200)}...{' '}
-							<a href={article.url} target='_blank' rel='noreferrer'>
-								<span className={styles.fullArticleLink}>
-									Read full article
-								</span>
-							</a>
+							<span className={styles.fullArticleLink}>Read full article</span>
 						</p>
 
 						<p className={styles.articleSource}>
