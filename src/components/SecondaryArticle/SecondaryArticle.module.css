@@ -1,0 +1,32 @@
+a {
+	text-decoration: none;
+}
+.secondary {
+	width: 100%;
+	max-width: 1080px;
+	margin: 1rem 0;
+	display: flex;
+}
+.secondaryImg {
+	max-width: 50%;
+	object-fit: contain;
+	object-position: 10% 10%;
+}
+.secondaryDescTitle {
+	font-size: 1rem;
+	color: #716c65;
+	margin-bottom: 1rem;
+}
+.secondaryDescTitle:hover {
+	color: #b80000;
+
+	text-decoration: underline;
+}
+.secondaryDescContent,
+.fullArticleLink,
+.articleSource {
+	display: none;
+}
+.secondaryDesc {
+	padding-left: 0.5rem;
+}

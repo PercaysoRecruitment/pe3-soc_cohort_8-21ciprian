@@ -9,9 +9,11 @@ function Main({articles}) {
 		<main className={styles.main}>
 			<MainArticle article={articles?.[0]} />
 			<hr />
-			{articles?.slice(1).map(article => (
-				<SecondaryArticle article={article} key={article.url} />
-			))}
+			<section className={styles.secondarySection}>
+				{articles?.slice(1).map(article => (
+					<SecondaryArticle article={article} key={article.url} />
+				))}
+			</section>
 		</main>
 	)
 }

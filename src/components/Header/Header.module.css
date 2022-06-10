@@ -30,6 +30,8 @@
 	outline: none;
 	border: none;
 	border-radius: inherit;
+	background-color: inherit;
+	width: 100%;
 }
 .inputButton {
 	padding: 0.5rem 1rem;

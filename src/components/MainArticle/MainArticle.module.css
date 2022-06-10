@@ -47,6 +47,6 @@
 	font-weight: 700;
 }
 .source:not(:last-of-type) {
-	border-right: 1px solid #716c65;
+	border-right: 1px solid rgba(113, 108, 101, 0.4);
 	padding-right: 1rem;
 }
