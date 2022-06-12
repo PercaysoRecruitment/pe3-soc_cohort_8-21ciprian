@@ -61,12 +61,8 @@
 		grid-template-columns: 66.66% 33.33%;
 		margin: auto;
 		gap: 1rem;
-		/* background-color: grey; */
 	}
-	.imgContainer {
-		/* background-color: green;
-		grid-area: 1/1; */
-	}
+
 	.mainImg {
 		width: 100%;
 		max-width: 100%;
