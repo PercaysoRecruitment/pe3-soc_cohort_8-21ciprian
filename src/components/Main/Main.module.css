@@ -1,12 +1,16 @@
 .main {
+	margin: 3rem auto;
 	padding: 1rem;
 }
-
-@media screen and (min-width: 780px) {
+hr {
+	max-width: 1080px;
+	margin: 2rem auto;
+}
+@media screen and (min-width: 680px) {
 	.secondarySection {
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(3, 32.55%);
 		gap: 1rem;
-		width: 100%;
 		max-width: 1080px;
 		margin: 0 auto 3rem;
 	}

@@ -47,3 +47,10 @@
 .inputButton:hover {
 	background-color: #6b0101;
 }
+@media screen and (min-width: 780px) {
+	.headerTop {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+}

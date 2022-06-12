@@ -5,12 +5,15 @@ function MainArticle({article}) {
 	const date = published[0]
 	const time = published[1].slice(0, -1)
 
-	console.log({article})
-	console.log({date})
-	console.log({time})
 	return (
 		<article className={styles.mainArticle}>
-			<img src={article.image} alt={article.title} className={styles.mainImg} />
+			<div className={styles.imgContainer}>
+				<img
+					src={article.image}
+					alt={article.title}
+					className={styles.mainImg}
+				/>
+			</div>
 			<section className={styles.mainDesc}>
 				<h2 className={styles.mainDescTitle}>{article.title}</h2>
 				<p className={styles.mainDescContent}>

@@ -6,7 +6,7 @@ function Header({search, setSearch, setData, setError, setLoading}) {
 		setLoading(true)
 		try {
 			const response = await fetch(
-				`${process.env.REACT_APP_BASE_URL}/search?q=${search}&token=${process.env.REACT_APP_API_TOKEN}&lang=en&max=5`
+				`${process.env.REACT_APP_BASE_URL}/search?q=${search}&token=${process.env.REACT_APP_API_TOKEN}&lang=en&max=7`
 			)
 			const fetchedData = await response.json()
 			setData(fetchedData)
@@ -21,7 +21,7 @@ function Header({search, setSearch, setData, setError, setLoading}) {
 		} else if (!/[a-z]/gi.test(string)) {
 			setError('Your query needs to contain a letter')
 		} else {
-			await fetchData()
+			// await fetchData()
 		}
 	}
 	async function handleClick() {

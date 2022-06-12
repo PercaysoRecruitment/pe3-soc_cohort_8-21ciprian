@@ -14,12 +14,12 @@ function App() {
 	useEffect(() => {
 		async function fetchData() {
 			const response = await fetch(
-				`${process.env.REACT_APP_BASE_URL}/top-headlines?&token=${process.env.REACT_APP_API_TOKEN}&lang=en&max=5`
+				`${process.env.REACT_APP_BASE_URL}/top-headlines?&token=${process.env.REACT_APP_API_TOKEN}&lang=en&max=7`
 			)
 			const resData = await response.json()
 			setData(resData)
 		}
-		fetchData()
+		// fetchData()
 	}, [])
 
 	return (
