@@ -23,7 +23,7 @@ function App() {
 	}, [])
 	console.log('data: ', data)
 	return (
-		<section className='app'>
+		<section data-testid='appTestId' className='app'>
 			<Header
 				search={search}
 				setSearch={setSearch}
