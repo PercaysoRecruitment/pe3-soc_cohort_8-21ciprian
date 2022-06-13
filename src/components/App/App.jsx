@@ -19,7 +19,7 @@ function App() {
 			const resData = await response.json()
 			setData(resData)
 		}
-		// fetchData()
+		fetchData()
 	}, [])
 	console.log('data: ', data)
 	return (
