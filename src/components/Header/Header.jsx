@@ -80,7 +80,7 @@ function Header({search, setSearch, setData, setError, setLoading}) {
 			</div>
 			{/* pass data to navbar so it can update the state when user clicks on topic options */}
 
-			<Navbar setData={setData} />
+			<Navbar setData={setData} setLoading={setLoading} setError={setError} />
 		</header>
 	)
 }
