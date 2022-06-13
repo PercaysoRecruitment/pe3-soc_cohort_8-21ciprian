@@ -28,21 +28,27 @@ function Navbar({setData}) {
 	}, [query])
 
 	return (
-		<nav className={styles.navbar}>
+		<nav data-testid='navTestId' className={styles.navbar}>
 			<select
+				data-testid='selectTestId'
 				className={styles.select}
 				value={query}
 				onChange={e => setQuery(e.target.value)}>
 				<option value=''>Topics</option>{' '}
-				{topics.map(topic => (
-					<option key={topic} value={topic} className={styles.navListItem}>
+				{topics.map((topic, i) => (
+					<option
+						data-testid={`opTestId-${i}`}
+						key={topic}
+						value={topic}
+						className={styles.navListItem}>
 						{topic}
 					</option>
 				))}
 			</select>
 			<ul className={styles.navList}>
-				{topics.map(topic => (
+				{topics.map((topic, i) => (
 					<li
+						data-testid={`liTestId-${i}`}
 						key={topic}
 						onClick={() => setQuery(topic)}
 						value={topic}
