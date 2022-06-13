@@ -16,8 +16,6 @@ function Navbar({setData, setLoading, setError}) {
 	//using useEffect I am fetching the data when the topic matches the topic options
 	useEffect(() => {
 		async function fetchTopics(topic) {
-			setLoading(true)
-
 			try {
 				const response = await fetch(
 					`${
@@ -31,9 +29,8 @@ function Navbar({setData, setLoading, setError}) {
 			} catch (err) {
 				setError(err)
 			}
-			setLoading(true)
 		}
-		// fetchTopics(query)
+		fetchTopics(query)
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [query])
 

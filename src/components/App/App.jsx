@@ -25,9 +25,8 @@ function App() {
 			const resData = await response.json()
 			setData(resData)
 		}
-		// fetchData()
+		fetchData()
 	}, [])
-	console.log('data: ', data)
 	return (
 		<section data-testid='appTestId' className='app'>
 			{/* Passing props to Header to keep track of the state */}

@@ -31,7 +31,7 @@ function Header({search, setSearch, setData, setError, setLoading}) {
 		} else if (!/[a-z]/gi.test(string)) {
 			setError('Your query needs to contain a letter')
 		} else {
-			// await fetchData()
+			await fetchData()
 		}
 	}
 	//function for fetching data when search button is clicked
