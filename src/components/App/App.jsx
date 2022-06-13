@@ -21,7 +21,7 @@ function App() {
 		}
 		// fetchData()
 	}, [])
-
+	console.log('data: ', data)
 	return (
 		<section className='app'>
 			<Header

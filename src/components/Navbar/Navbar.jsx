@@ -23,7 +23,7 @@ function Navbar({setData}) {
 			const fetchedData = await response.json()
 			setData(fetchedData)
 		}
-		fetchTopics(query)
+		// fetchTopics(query)
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [query])
 
