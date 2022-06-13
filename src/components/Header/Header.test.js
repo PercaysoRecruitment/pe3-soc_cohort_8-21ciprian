@@ -3,6 +3,12 @@ import userEvent from '@testing-library/user-event'
 import Header from './Header'
 
 
+test('Should render Header component', () => {
+  render(<Header />)
+  const header = screen.getByTestId('headerTestId')
+  expect(header).toBeInTheDocument()
+  // screen.debug()
+})
 test('Should render logo in Header component', () => {
   render(<Header />)
   const logo = screen.getByText(/pe3news/i)

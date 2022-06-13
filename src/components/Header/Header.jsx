@@ -38,7 +38,7 @@ function Header({search, setSearch, setData, setError, setLoading}) {
 		setError(null)
 	}
 	return (
-		<header className={styles.header}>
+		<header data-testid='headerTestId' className={styles.header}>
 			<div className={styles.headerTop}>
 				<p className={styles.logo}>PE3News</p>{' '}
 				<div className={styles.inputContainer}>
