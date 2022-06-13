@@ -3,8 +3,8 @@ import styles from './MainArticle.module.css'
 function MainArticle({article}) {
 	//created variable to display date and time of the article from the fetched data
 	const published = article?.publishedAt?.split(/T/)
-	const date = published?.[0] || 'n/a'
-	const time = published?.[1].slice(0, -1) || 'n/a'
+	const date = published?.[0]
+	const time = published?.[1].slice(0, -1)
 
 	return (
 		<article data-testid='maTestId' className={styles.mainArticle}>

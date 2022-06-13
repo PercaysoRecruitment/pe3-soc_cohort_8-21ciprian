@@ -1,6 +1,7 @@
 import styles from './SecondaryArticle.module.css'
 
 function SecondaryArticle({article}) {
+	//created variable to display date and time of the article from the fetched data
 	const published = article?.publishedAt?.split(/T/)
 	const date = published?.[0]
 	const time = published?.[1].slice(0, -1)
@@ -22,6 +23,8 @@ function SecondaryArticle({article}) {
 							{article?.title}
 						</a>
 					</h2>
+					{/* reducing the content to 150 characters for a cleaner look and the user can click on the Read full article to read the full article */}
+
 					<p
 						data-testid='saDesceTestId'
 						className={styles.secondaryDescContent}>
