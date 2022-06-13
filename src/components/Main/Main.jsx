@@ -4,12 +4,14 @@ import styles from './Main.module.css'
 
 function Main({articles}) {
 	return (
-		<main className={styles.main}>
+		<main data-testid='mainTestId' className={styles.main}>
 			<MainArticle article={articles?.[0]} />
 			<hr />
-			<section className={styles.secondarySection}>
+			<section
+				data-testid='mainSectionTestId'
+				className={styles.secondarySection}>
 				{articles?.slice(1).map(article => (
-					<SecondaryArticle article={article} key={article.url} />
+					<SecondaryArticle article={article} key={article?.url} />
 				))}
 			</section>
 		</main>
