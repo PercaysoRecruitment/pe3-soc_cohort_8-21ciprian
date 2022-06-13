@@ -35,6 +35,6 @@ problem.
 If you're in the mood for showboating, plese feel free to show us what else you
 can do. E.g. you could automate tests for your solution.
 
-## URL of the website:
+## Here is the URL of the website:
 
 https://pe3-news.netlify.app/
